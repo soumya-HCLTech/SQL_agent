@@ -25,7 +25,7 @@ if not groq_api_key:
 
 # Initialize models
 llm_sql = ChatGroq(model_name="qwen-2.5-coder-32b", api_key=groq_api_key)
-llm_reasoning = ChatGroq(model_name="deepseek-r1-distill-llama-70b", api_key=groq_api_key)
+llm_reasoning = ChatGroq(model_name="deepseek-r1-distill-llama-70b", api_key=groq_api_key, verbose=False)
 
 # Initialize embedder
 embedder = SentenceTransformer("all-MiniLM-L6-v2")
